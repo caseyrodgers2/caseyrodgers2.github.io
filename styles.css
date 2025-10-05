@@ -1,0 +1,173 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+    color: #222;
+}
+
+header {
+    background: #a9ceae;
+    color: #032100;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav a {
+    color: #3d533c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+section {
+    margin-bottom: 2.5rem;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* Menu link styles */
+.menu-link {
+    padding: 0.3rem 1rem;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+.menu-link.active,
+.menu-link[aria-current="true"] {
+    background: #fff;
+    color: #333;
+}
+.menu-link:focus {
+    outline: 2px solid #fff;
+}
+
+
+/* About Me section styles */
+.about-profile {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    margin-bottom: 0.5rem;
+}
+
+
+/* Education section styles */
+.education {
+    display: flex;
+    align-items: flex-start;
+}
+
+.readable-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0em 0;
+}
+.readable-list li {
+  margin-bottom: 0.5em;
+  padding: 0em 0em;
+  font-size: 1.05em;
+  line-height: 1.5;
+}
+
+.school {
+  color: #0074d9;
+}
+.date {
+  color: #888;
+  font-style: italic;
+}
+
+
+/* Portfolio section styles */
+
+.research-list {
+    list-style-type: disc;
+    margin-left: 2em;
+    margin-bottom: 1em;
+}
+.research-list li {
+    margin-bottom: 0.5em;
+}
+
+#portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: flex-start;
+}
+
+.portfolio-item {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 1rem;
+    width: 30%; /* Change from 270px or 45% to 30% */
+    min-width: 220px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.portfolio-tags {
+    margin-top: 0.5rem;
+}
+
+.portfolio-tag {
+    display: inline-block;
+    background: #e0e0e0;
+    color: #333;
+    border-radius: 12px;
+    padding: 0.2rem 0.7rem;
+    font-size: 0.85rem;
+    margin-right: 0.4rem;
+    margin-bottom: 0.2rem;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    .portfolio-item {
+        width: 45%;
+    }
+}
+@media (max-width: 600px) {
+    .portfolio-item {
+        width: 100%;
+    }
+}
+
