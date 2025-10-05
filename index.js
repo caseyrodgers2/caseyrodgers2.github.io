@@ -40,6 +40,8 @@ const portContent = `
         <li>Disaster recovery</li>
         <li>Engineering education</li>
     </ul>
+    <p>An overview of my publication history can be found on my <a href="https://scholar.google.com/citations?user=pwHFok8AAAAJ" target="_blank" rel="noopener noreferrer">google scholar</a>.
+    </p>
     <p>
         Many of my projects have corresponding published papers and open-source code repositories.<br>
         <strong>Please click on the project images below to learn more about each one.</strong>
